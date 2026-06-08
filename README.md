@@ -16,45 +16,25 @@ This project implements **Multivariate Linear Regression** from scratch using **
 Given a dataset with (m) training examples and (n) features:
 
 [
-\hat{y} = XW + b
+y_hat = XW + b
 ]
 
 where:
 
-* (X) = Feature matrix of shape ((m, n))
-* (W) = Weight vector of shape ((n,))
-* (b) = Bias term
-* (\hat{y}) = Predicted values
+* X = Feature matrix of shape ((m, n))
+* W = Weight vector of shape ((n,))
+* b = Bias term
+* y_hat = Predicted values
 
 ### Cost Function
 
-The model minimizes the Mean Squared Error cost:
-
-[
-J(W,b) = \frac{1}{2m}\sum_{i=1}^{m}(\hat{y}^{(i)} - y^{(i)})^2
-]
+The model minimizes the Mean Squared Error cost
 
 ### Gradient Computation
 
-[
-\frac{\partial J}{\partial W} = \frac{1}{m}X^T(\hat{y}-y)
-]
-
-[
-\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}-y)
-]
 
 ### Gradient Descent Update Rule
 
-[
-W := W - \alpha \frac{\partial J}{\partial W}
-]
-
-[
-b := b - \alpha \frac{\partial J}{\partial b}
-]
-
-where (\alpha) is the learning rate.
 
 ## Project Structure
 
